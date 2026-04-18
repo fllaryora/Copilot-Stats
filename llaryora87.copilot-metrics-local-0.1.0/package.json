@@ -1,0 +1,66 @@
+{
+	"name": "copilot-metrics-local",
+	"displayName": "llaryora87 - Copilot Metrics",
+	"publisher": "llaryora87",
+	"version": "1.0.0",
+	"icon": "public/c70logo.png",
+	"description": "A VS Code extension to track Copilot usage metrics.",
+	"author": "llaryora87",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/YourUsername/YourRepo.git"
+	},
+	"engines": {
+		"vscode": "^1.97.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "copilotMetrics.show",
+				"title": "Show Copilot Metrics"
+			},
+			{
+				"command": "copilotMetrics.checkSubscription",
+				"title": "Copilot Metrics: Check Subscription"
+			},
+			{
+				"command": "copilotMetrics.resetGlobalState",
+				"title": "Copilot Metrics: Reset"
+			}
+		]
+	},
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"test": "npm run compile && node ./out/test/runTest.js",
+		"compile": "tsc -p .",
+		"package": "vsce package",
+		"publish": "vsce publish"
+	},
+	"dependencies": {
+		"jsonc-parser": "^3.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.4",
+		"@types/uuid": "^10.0.0",
+		"@types/vscode": "^1.97.0",
+		"@vscode/test-electron": "^2.4.1",
+		"@vscode/vsce": "^3.2.2",
+		"glob": "^11.0.1",
+		"mkdirp": "^3.0.1",
+		"typescript": "^5.7.3"
+	},
+	"__metadata": {
+		"installedTimestamp": 1775951110880,
+		"targetPlatform": "undefined",
+		"size": 369682
+	}
+}

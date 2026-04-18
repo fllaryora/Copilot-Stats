@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# TypeScript build output
+out/
+*.js
+*.js.map
+*.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings
+.vscode/
+.vscode-test/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# MacOS files
+.DS_Store
+
+# Linux files
+*.~lock
+
+# Windows files
+Thumbs.db
